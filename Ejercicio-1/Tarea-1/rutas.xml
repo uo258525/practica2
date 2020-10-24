@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas>
+<ruta name="Ruta a Viena" duration="6 d�as">
+	<tipo>Turística </tipo>
+	<dificultad-ruta> Fácil</dificultad-ruta>
+	<inicio latitud="" longitud="" altitud="">
+		<fecha-inicio>24/10/2020</fecha-inicio>
+		<hora-inicio>9:00</hora-inicio>
+		<lugar-inicio>Asturias</lugar-inicio>
+		<direcci�n inicio>Aeropuerto de Asturias (Santiago del Monte)</direccion-inicio>
+		
+	</inicio>
+	<agencia>Sin agencia</agencia>
+	<descripci�n>Esta ruta tiene origen en Asturias y destino en Viena. 
+	Se realizar� en avi�n y se har� paradas en Paris, Berl�n, Berna y finalmente concluir� en Viena.
+	Cada parada durar� 2 d�as para que los turistas puedan hacer visitas a las ciudades correspondientes y hacer turismo.
+	</descripci�n>
+	<personas-aptas>Todas las edades</personas-aptas>
+	<referencias>
+		<referencia></referencia>
+		<referencia></referencia>
+		<referencia></referencia>
+	</referencias>
+	<recomendacion>7</recomendacion>
+
+	
+</ruta>
+
+</rutas>
