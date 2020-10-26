@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
 <rutas>
 <ruta nombre="Ruta a Viena" duracion="8 días">
 	<tipo>Turística </tipo>
@@ -14,7 +15,10 @@
 	Se realizará en avión y se harán paradas en Paris, Berlín, Berna y finalmente concluirá en Viena.
 	Cada parada durará 2 días para que los turistas puedan hacer visitas a las ciudades correspondientes y hacer turismo.
 	</descripcion>
-	<personas-aptas>Todas las edades</personas-aptas>
+	<personas-aptas>
+		<apta>Mayores de 18</apta>
+		<apta>Se puede ir con niños</apta>
+	</personas-aptas>
 	<referencias>
 		<referencia>https://es.parisinfo.com/</referencia>
 		<referencia>https://www.visitberlin.de/es</referencia>
@@ -120,7 +124,10 @@
 	Se realizará en avión y se harán paradas en Madrid, Londres y finalmente concluirá en Roma.
 	Cada parada durará 2 días para que los turistas puedan hacer visitas a las ciudades correspondientes y hacer turismo.
 	</descripcion>
-	<personas-aptas>Todas las edades</personas-aptas>
+	<personas-aptas>
+		<apta>Mayores de 18</apta>
+		<apta>Se puede ir con niños</apta>
+	</personas-aptas>
 	<referencias>
 		<referencia>https://www.esmadrid.com/?utm_referrer=https%3A%2F%2Fwww.google.com%2F</referencia>
 		<referencia>https://www.viajarlondres.com/</referencia>
@@ -202,7 +209,10 @@
 	Se realizará en avión y se harán paradas en Praga, Budapest y finalmente concluirá en Estambul.
 	Cada parada durará 2 días para que los turistas puedan hacer visitas a las ciudades correspondientes y hacer turismo.
 	</descripcion>
-	<personas-aptas>Todas las edades</personas-aptas>
+	<personas-aptas>
+		<apta>Mayores de 18</apta>
+		<apta>Se puede ir con niños</apta>
+	</personas-aptas>
 	<referencias>
 		<referencia>https://www.disfrutapraga.com/</referencia>
 		<referencia>https://www.disfrutabudapest.com/</referencia>

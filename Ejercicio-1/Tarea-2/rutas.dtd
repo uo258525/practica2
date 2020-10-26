@@ -1,0 +1,41 @@
+<!ELEMENT rutas (ruta+)>
+<!ELEMENT ruta (tipo, dificultad-ruta, inicio, agencia, descripcion, personas-aptas, referencias,recomendacion,hitos)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT dificultad-ruta (#PCDATA)>
+<!ELEMENT inicio (fecha-inicio?,hora-inicio?,lugar-inicio,direccion-inicio)>
+<!ELEMENT fecha-inicio (#PCDATA)>
+<!ELEMENT hora-inicio (#PCDATA)>
+<!ELEMENT lugar-inicio (#PCDATA)>
+<!ELEMENT direccion-inicio (#PCDATA)>
+<!ELEMENT agencia (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT personas-aptas (apta+)>
+<!ELEMENT apta (#PCDATA)>
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT recomendacion (#PCDATA)>
+<!ELEMENT hitos (hito+)>
+<!ELEMENT hito (nombre-hito, descripcion-hito, distancia-hito,tiempo-hito, fotos-hito+, videos-hito*)>
+<!ELEMENT nombre-hito (#PCDATA)>
+<!ELEMENT descripcion-hito (#PCDATA)>
+<!ELEMENT distancia-hito (#PCDATA)>
+<!ELEMENT tiempo-hito (#PCDATA)>
+<!ELEMENT fotos-hito (foto-hito+)>
+<!ELEMENT foto-hito (#PCDATA)>
+<!ELEMENT videos-hito (video-hito+)>
+<!ELEMENT video-hito (#PCDATA)>
+<!ATTLIST ruta
+nombre CDATA #REQUIRED
+duracion CDATA #REQUIRED
+<!ATTLIST inicio
+longitud CDATA #REQUIRED
+latitud CDATA #REQUIRED
+altitud CDATA #REQUIRED>
+<!ATTLIST hito
+longitud CDATA #REQUIRED
+latitud CDATA #REQUIRED
+altitud CDATA #REQUIRED>
+<!ATTLIST distancia-hito
+unidad CDATA #REQUIRED>
+<!ATTLIST tiempo-hito
+unidad CDATA #REQUIRED>
