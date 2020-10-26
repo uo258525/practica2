@@ -26,7 +26,7 @@
 <!ELEMENT video-hito (#PCDATA)>
 <!ATTLIST ruta
 nombre CDATA #REQUIRED
-duracion CDATA #REQUIRED
+duracion CDATA #REQUIRED>
 <!ATTLIST inicio
 longitud CDATA #REQUIRED
 latitud CDATA #REQUIRED

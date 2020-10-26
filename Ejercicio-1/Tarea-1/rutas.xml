@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE rutas SYSTEM "rutas.dtd">
 <rutas>
 <ruta nombre="Ruta a Viena" duracion="8 días">
 	<tipo>Turística </tipo>
@@ -105,10 +104,8 @@
 	<video-hito>https://www.youtube.com/watch?v=sG7ud_coOgU</video-hito>
 	</videos-hito>
 	</hito>
-
 	</hitos>
-	
-</ruta>
+	</ruta>
 
 <ruta nombre="Ruta a Roma" duracion="6 días">
 	<tipo>Turística </tipo>
@@ -195,7 +192,7 @@
 	</hitos>
 </ruta>
 
-<ruta nombre="Ruta a Estambul" duracion="">
+<ruta nombre="Ruta a Estambul" duracion="6 días">
 	<tipo>Turística </tipo>
 	<dificultad-ruta> Fácil</dificultad-ruta>
 	<inicio latitud="40.4927751" longitud="-3.5933761" altitud="610">
@@ -219,7 +216,7 @@
 		<referencia>https://www.estambul.es/</referencia>		
 	</referencias>
 	<recomendacion>9</recomendacion>
-	</ruta>
+	
 
 	<hitos>
 	<hito latitud="50.08804" longitud="14.42076" altitud="235">
@@ -278,9 +275,8 @@
 	<video-hito>https://www.youtube.com/watch?v=UENNMWrKLh4</video-hito>
 	</videos-hito>
 	</hito>
-
-
 	</hitos>
+	</ruta>
 
 
 
