@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns="http://tempuri.org/rutas" elementFormDefault="qualified" targetNamespace="http://tempuri.org/rutas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema 
+	xmlns="http://tempuri.org/rutas" 
+	elementFormDefault="qualified" 
+	targetNamespace="http://tempuri.org/rutas" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="rutas">
 		<xs:complexType>
 			<xs:sequence>
@@ -34,13 +38,13 @@
 				<xs:element ref="lugar-inicio" />
 				<xs:element ref="direccion-inicio" />
 			</xs:sequence>
-			<xs:attribute name="longitud" type="xs:string" use="required" />
-			<xs:attribute name="latitud" type="xs:string" use="required" />
-			<xs:attribute name="altitud" type="xs:string" use="required" />
+			<xs:attribute name="longitud" type="xs:double" use="required" />
+			<xs:attribute name="latitud" type="xs:double" use="required" />
+			<xs:attribute name="altitud" type="xs:double" use="required" />
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="fecha-inicio" type="xs:string" />
-	<xs:element name="hora-inicio" type="xs:string" />
+	<xs:element name="fecha-inicio" type="xs:date" />
+	<xs:element name="hora-inicio" type="xs:time" />
 	<xs:element name="lugar-inicio" type="xs:string" />
 	<xs:element name="direccion-inicio" type="xs:string" />
 	<xs:element name="agencia" type="xs:string" />
@@ -61,11 +65,11 @@
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="referencia" type="xs:string" />
-	<xs:element name="recomendacion" type="xs:string" />
+	<xs:element name="recomendacion" type="xs:int" />
 	<xs:element name="hitos">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="1" maxOccurs="unbounded" ref="hito" />
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="hito" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -79,9 +83,9 @@
 				<xs:element minOccurs="1" maxOccurs="unbounded" ref="fotos-hito" />
 				<xs:element minOccurs="0" maxOccurs="unbounded" ref="videos-hito" />
 			</xs:sequence>
-			<xs:attribute name="longitud" type="xs:string" use="required" />
-			<xs:attribute name="latitud" type="xs:string" use="required" />
-			<xs:attribute name="altitud" type="xs:string" use="required" />
+			<xs:attribute name="longitud" type="xs:double" use="required" />
+			<xs:attribute name="latitud" type="xs:double" use="required" />
+			<xs:attribute name="altitud" type="xs:double" use="required" />
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="nombre-hito" type="xs:string" />
@@ -107,7 +111,7 @@
 	<xs:element name="fotos-hito">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="1" maxOccurs="unbounded" ref="foto-hito" />
+				<xs:element minOccurs="1" maxOccurs="5" ref="foto-hito" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -115,7 +119,7 @@
 	<xs:element name="videos-hito">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element minOccurs="1" maxOccurs="unbounded" ref="video-hito" />
+				<xs:element minOccurs="0" maxOccurs="3" ref="video-hito" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>

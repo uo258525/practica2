@@ -15,7 +15,7 @@
 <!ELEMENT referencia (#PCDATA)>
 <!ELEMENT recomendacion (#PCDATA)>
 <!ELEMENT hitos (hito+)>
-<!ELEMENT hito (nombre-hito, descripcion-hito, distancia-hito,tiempo-hito, fotos-hito+, videos-hito*)>
+<!ELEMENT hito (nombre-hito, descripcion-hito, distancia-hito,tiempo-hito?, fotos-hito+, videos-hito*)>
 <!ELEMENT nombre-hito (#PCDATA)>
 <!ELEMENT descripcion-hito (#PCDATA)>
 <!ELEMENT distancia-hito (#PCDATA)>
