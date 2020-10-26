@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/rutas" elementFormDefault="qualified" targetNamespace="http://tempuri.org/rutas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="rutas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="ruta" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ruta">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tipo" />
+				<xs:element ref="dificultad-ruta" />
+				<xs:element ref="inicio" />
+				<xs:element ref="agencia" />
+				<xs:element ref="descripcion" />
+				<xs:element ref="personas-aptas" />
+				<xs:element ref="referencias" />
+				<xs:element ref="recomendacion" />
+				<xs:element ref="hitos" />
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="duracion" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tipo" type="xs:string" />
+	<xs:element name="dificultad-ruta" type="xs:string" />
+	<xs:element name="inicio">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" ref="fecha-inicio" />
+				<xs:element minOccurs="0" maxOccurs="1" ref="hora-inicio" />
+				<xs:element ref="lugar-inicio" />
+				<xs:element ref="direccion-inicio" />
+			</xs:sequence>
+			<xs:attribute name="longitud" type="xs:string" use="required" />
+			<xs:attribute name="latitud" type="xs:string" use="required" />
+			<xs:attribute name="altitud" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fecha-inicio" type="xs:string" />
+	<xs:element name="hora-inicio" type="xs:string" />
+	<xs:element name="lugar-inicio" type="xs:string" />
+	<xs:element name="direccion-inicio" type="xs:string" />
+	<xs:element name="agencia" type="xs:string" />
+	<xs:element name="descripcion" type="xs:string" />
+	<xs:element name="personas-aptas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="apta" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="apta" type="xs:string" />
+	<xs:element name="referencias">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="referencia" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="referencia" type="xs:string" />
+	<xs:element name="recomendacion" type="xs:string" />
+	<xs:element name="hitos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="hito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre-hito" />
+				<xs:element ref="descripcion-hito" />
+				<xs:element ref="distancia-hito" />
+				<xs:element ref="tiempo-hito" />
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="fotos-hito" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="videos-hito" />
+			</xs:sequence>
+			<xs:attribute name="longitud" type="xs:string" use="required" />
+			<xs:attribute name="latitud" type="xs:string" use="required" />
+			<xs:attribute name="altitud" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre-hito" type="xs:string" />
+	<xs:element name="descripcion-hito" type="xs:string" />
+	<xs:element name="distancia-hito">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tiempo-hito">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="unidad" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fotos-hito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="foto-hito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="foto-hito" type="xs:string" />
+	<xs:element name="videos-hito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="video-hito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video-hito" type="xs:string" />
+</xs:schema>
